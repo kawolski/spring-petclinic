@@ -34,13 +34,6 @@ steps:
   displayName: Push Docker Image
   inputs:
     containerRegistry: 'pet_clinic_service_connection'
-    repository: './'
+    repository: 'pet-clinic'
     command: 'push'
     tags: 'latest'
-- task: Docker@2
-  inputs:
-    containerRegistry: 'pet_clinic_service_connection'
-    repository: 'abc'
-    command: 'push'
-    tags: 'latest'
-  
