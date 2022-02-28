@@ -33,6 +33,6 @@ steps:
   displayName: Push Docker Image
   inputs:
     containerRegistry: 'pet_clinic_service_connection'
-    repository: 'spring-petclinic'
+    repository: 'spring-petclinic:2.1.0.BUILD-SNAPSHOT'
     command: 'push'
     tags: 'latest'
