@@ -28,11 +28,19 @@ steps:
     goals: 'spring-boot:build-image'
     publishJUnitResults: false
     jdkVersionOption: '1.11'
+    mavenOptions: '-X'
 
 - task: Docker@2
   displayName: Push Docker Image
   inputs:
     containerRegistry: 'pet_clinic_service_connection'
-    repository: 'spring-petclinic:2.1.0.BUILD-SNAPSHOT'
+    repository: './'
     command: 'push'
     tags: 'latest'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'pet_clinic_service_connection'
+    repository: 'abc'
+    command: 'push'
+    tags: 'latest'
+  
