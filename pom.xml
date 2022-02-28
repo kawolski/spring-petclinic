@@ -123,6 +123,13 @@
               <goal>build-info</goal>
             </goals>
             <configuration>
+                <image>
+                    <name>pcregi.azurecr.io/${project.artifactId}</name>
+                </image>
+                <layers>
+                    <enabled>true</enabled>
+                    <includeLayerTools>true</includeLayerTools>
+                </layers>
               <additionalProperties>
                 <encoding.source>${project.build.sourceEncoding}</encoding.source>
                 <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
