@@ -36,4 +36,4 @@ steps:
     containerRegistry: 'pet_clinic_service_connection'
     repository: 'pet_clinic_service_connection'
     command: 'push'
-    tags: 'latest'
+    tags: '2.1.0.BUILD-SNAPSHOT'
