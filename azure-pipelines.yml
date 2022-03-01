@@ -36,3 +36,4 @@ steps:
     containerRegistry: 'pet_clinic_service_connection'
     repository: 'petclinic'
     command: 'push'
+    tags: $(Build.BuildId)
